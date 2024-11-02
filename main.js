@@ -118,24 +118,32 @@
 // console.log(text);
 
 // document.getElementById("mydiv").innerHTML = text;
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let sum = arr.reduce((acc, current) => {
-  return acc + current;
-});
+// let sum = arr.reduce((acc, current) => {
+//   return acc + current;
+// });
 
-console.log(sum);
+// console.log(sum);
 
-let filteredItem = arr.filter((item, index) => {
-  if (item > 2) {
-    return item;
+// let filteredItem = arr.filter((item, index) => {
+//   if (item > 2) {
+//     return item;
+//   }
+// });
+
+// console.log(filteredItem);
+
+// let newArray = arr.map((item) => {
+//   return item + "hello";
+// });
+
+// console.log(newArray);
+
+let parentEl = document.getElementById("parent");
+console.log(parentEl);
+parentEl.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI") {
+    console.log("clicked", event.target.textContent);
   }
 });
-
-console.log(filteredItem);
-
-let newArray = arr.map((item) => {
-  return item + "hello";
-});
-
-console.log(newArray);
